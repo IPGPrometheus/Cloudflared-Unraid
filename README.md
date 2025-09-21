@@ -54,8 +54,6 @@ Replace `your_tunnel_token_here` with your actual Cloudflare tunnel token.
 Create a `docker-compose.yml` file:
 
 ```yaml
-version: '3.8'
-
 services:
   cloudflared:
     image: cloudflare/cloudflared:latest
@@ -63,8 +61,13 @@ services:
     command: tunnel --no-autoupdate run
     environment:
       - TUNNEL_TOKEN=your_tunnel_token_here
+    networks:
+      - bridge ### replace with custom network if you want
     restart: unless-stopped
-    network_mode: bridge
+
+networks:
+   "bridge":
+      external: true
 ```
 
 Then run:
