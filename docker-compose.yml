@@ -1,0 +1,20 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    command: tunnel --no-autoupdate run
+    environment:
+      # Replace with your actual tunnel token from Cloudflare Zero Trust dashboard
+      - TUNNEL_TOKEN=your_tunnel_token_here
+      # Optional: Additional environment variables
+      # - TUNNEL_EDGE_IP_VERSION=auto
+      # - TUNNEL_PROTOCOL=quic
+      # - TUNNEL_HEARTBEAT_INTERVAL=30s
+      # - TUNNEL_RETRIES=5
+    restart: unless-stopped
+    networks:
+      - bridge ### change this with whatever network you want
+    
+networks:
+  "bridge": ### same as name above or "###" this out"
+    external: true  
