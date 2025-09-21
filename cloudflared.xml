@@ -14,7 +14,6 @@
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/IPGPrometheus/Cloudflared-Unraid/master/cloudflared.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/IPGPrometheus/Cloudflared-Unraid/master/cloudflared_icon.png</Icon>
-  <ExtraParams>--no-autoupdate run</ExtraParams>
   <PostArgs>tunnel --no-autoupdate run</PostArgs>
   <CPUset/>
   <DateInstalled/>
