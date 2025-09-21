@@ -24,14 +24,9 @@ Before starting, you'll need:
 
 ### Method 1: Unraid Template [work in progress]
 
-1. Add the template URL to your Unraid Community Applications:
-   ```
-   https://raw.githubusercontent.com/IPGPrometheus/Cloudflared-Unraid/master/cloudflared.xml
-   ```
+1. Search for "cloudflared" in Community Applications and install
 
-2. Search for "cloudflared" in Community Applications and install
-
-3. Configure the tunnel token in the template settings
+2. Configure the tunnel token in the template settings
 
 ### Method 2: Docker CLI
 
