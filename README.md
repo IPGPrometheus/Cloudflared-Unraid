@@ -22,7 +22,7 @@ Before starting, you'll need:
 
 ## Installation Methods
 
-### Method 1: Unraid Template
+### Method 1: Unraid Template [work in progress]
 
 1. Add the template URL to your Unraid Community Applications:
    ```
