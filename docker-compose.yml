@@ -9,6 +9,9 @@ services:
     restart: unless-stopped
     networks:
       - bridge ### change this with whatever network you want
+    #labels:
+    #  net.unraid.docker.webui: "http://[IP]:3750"
+    #  net.unraid.docker.icon: "https://raw.githubusercontent.com/IPGPrometheus/Cloudflared-Unraid/main/cloudflare_icon.png"
     
 networks:
   "bridge": ### same as name above or "###" this out"
